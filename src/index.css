@@ -664,6 +664,10 @@
     padding-right: var(--space-s);
   }
 
+  .aboutUs {
+    padding-top: calc(var(--space-m) * 3);
+  }
+
   .aboutUs h1 {
     font-size: var(--size-m);
     margin-bottom: var(--space-m);
