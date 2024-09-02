@@ -8,7 +8,7 @@
 }
 
 .innerBox {
-  width: 80%;
+  width: 70%;
 }
 
 
@@ -16,7 +16,7 @@
 .header {
   height: auto;
   position: absolute;
-  background-color:  rgba(20, 59, 83, 0.6);
+  background-color:  rgba(20, 59, 83, 0.8);
 }
 
 .header .innerBox {
@@ -24,15 +24,19 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding-left: var(--space-xl);
+  padding-right: var(--space-xl);
 }
 
 #logo {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   margin-top: var(--space-m);
-  margin-bottom: var(--space-m);
+  margin-bottom: var(--space-s);
   box-shadow: var(--main-shadow);
+  z-index: 1;
 }
 
 #logo:hover {
@@ -46,11 +50,12 @@
   justify-content: end;
   align-items: center;
   margin-top: var(--space-m);
-  margin-bottom: var(--space-m);
+  margin-bottom: 0;
 }
 
 .header ul li {
   list-style: none;
+  color: var(--second-color);
   font-family: var(--main-font);
   font-size: var(--size-m);
   margin-left: var(--space-xxl);
@@ -66,4 +71,141 @@
   cursor: pointer;
   color: var(--third-color);
   border-bottom: 1px solid var(--third-color);
+}
+
+
+/* FIRST SECTION - HEADER */
+.aboutUs {
+  height: auto;
+  background-color: var(--main-color);
+  padding-top: calc(var(--space-l) * 3);
+}
+
+/* .aboutUs::after {
+  content: "";
+  width: 200%;
+  height: 20rem;
+  background-color: var(--main-color);
+  transform: skewY(-5deg);
+  position: relative;
+  bottom: -10rem;
+} */
+
+.aboutUs .innerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.aboutUs h1 {
+  font-family: var(--heading-font);
+  color: var(--third-color);
+  font-size: var(--size-xxl);
+  margin-bottom: var(--space-xl);
+}
+
+.aboutUs .oNas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutUs .oNas .carouselSection {
+  width: 50%;
+}
+
+.aboutUs .oNas img {
+  width: 400px;
+  height: 400px;
+}
+
+.aboutUs .oNas .povidani {
+  width: 50%;
+  color: var(--second-color);
+  font-size: var(--size-s2);
+  font-family: var(--main-font);
+}
+
+
+
+
+
+/* RESPONSIVITY */
+/* Větší obrazovky */
+@media only screen and (min-width: 1600px) {
+  .aboutUs h1 {
+    font-size: var(--size-xxxl);
+  }
+
+  .aboutUs .oNas .povidani {
+    font-size: var(--size-m);
+  }
+
+  .header ul li {
+    font-size: var(--size-l);
+  }
+}
+
+
+@media only screen and (min-width: 1700px) {
+  .innerBox {
+    width: 65%;
+  }
+
+  .header .innerBox {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .innerBox {
+    width: 60%;
+  }
+
+  .header .innerBox {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 2200px) {
+  .innerBox {
+    width: 55%;
+  }
+
+  .header .innerBox {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 2400px) {
+  .innerBox {
+    width: 50%;
+  }
+
+  .header .innerBox {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 2600px) {
+  .innerBox {
+    width: 45%;
+  }
+
+  .header .innerBox {
+    width: 70%;
+  }
+}
+
+
+/* Menší obrazovky */
+
+
+@media only screen and (max-width: 1100px) {
+  /* HEADER */
+  .header .innerBox ul {
+    display: none;
+  }
 }
