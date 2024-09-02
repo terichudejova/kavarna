@@ -630,6 +630,10 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .innerBox {
+    width: 85%;
+  }
+
   #logo {
     width: 40px;
     height: 40px;
@@ -646,7 +650,15 @@
   }
 
   .menu {
-    padding: var(--space-s) var(--space-xs) 0 var(--space-xs);
+    padding: var(--space-s) var(--space-s) 0 var(--space-s);
+  }
+
+  .menu .leftColumn {
+    width: 72%;
+  }
+
+  .menu .rightColumn {
+    width: 28%;
   }
 
   .menu .leftColumn ul {
@@ -659,25 +671,31 @@
     font-size: var(--size-m);
   }
 
+  .contact .contactPage {
+    margin-bottom: var(--space-xl);
+  }
+
   .contactPage .contactMap {
     margin-bottom: var(--space-l);
   }
-}
+  .contactPage .contactInfo {
+    font-size: var(--size-xs);
+  }
 
-@media only screen and (max-width: 340px) {
-  .innerBox {
-    width: 80%;
+  .contactInfo h4 {
+    font-size: var(--size-s2);
   }
 }
 
-@media only screen and (max-width: 330px) {
-  .innerBox {
-    width: 85%;
-  }
-}
-
-@media only screen and (max-width: 310px) {
+@media only screen and (max-width: 350px) {
   .innerBox {
     width: 90%;
   }
 }
+
+@media only screen and (max-width: 330px) {
+  .menu {
+    padding: var(--space-s) var(--space-xs) 0 var(--space-xs);
+  }
+}
+
