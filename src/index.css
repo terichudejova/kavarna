@@ -386,22 +386,36 @@
   .header ul li {
     font-size: var(--size-l);
   }
-}
 
-
-@media only screen and (min-width: 1700px) {
-  .innerBox {
-    width: 65%;
+  .nabidka h2,
+  .contact h2 {
+    font-size: var(--size-xxl);
   }
 
-  .header .innerBox {
-    width: 90%;
+  .menu h3 {
+    font-size: var(--size-xl);
+  }
+
+  .menu .columns {
+    font-size: var(--size-m);
+  }
+
+  .contact .contactInfo {
+    font-size: var(--size-m);
+  }
+
+  .contact h4 {
+    font-size: var(--size-l);
+  }
+
+  .footer p {
+    font-size: var(--size-xs);
   }
 }
 
 @media only screen and (min-width: 2000px) {
   .innerBox {
-    width: 60%;
+    width: 70%;
   }
 
   .header .innerBox {
@@ -411,7 +425,7 @@
 
 @media only screen and (min-width: 2200px) {
   .innerBox {
-    width: 55%;
+    width: 65%;
   }
 
   .header .innerBox {
@@ -421,7 +435,7 @@
 
 @media only screen and (min-width: 2400px) {
   .innerBox {
-    width: 50%;
+    width: 60%;
   }
 
   .header .innerBox {
@@ -431,7 +445,7 @@
 
 @media only screen and (min-width: 2600px) {
   .innerBox {
-    width: 45%;
+    width: 55%;
   }
 
   .header .innerBox {
