@@ -48,7 +48,6 @@ body, html {
 #mainContainer {
   background-color: var(--second-color);
   width: 100vw;
-  height: 200vh;
   margin: 0;
   padding: 0;
   display: flex;
