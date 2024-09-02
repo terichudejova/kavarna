@@ -49,6 +49,8 @@ function App() {
             <polygon points="100,0 100,200 0,200" fill="#f4dcdc" />
           </svg>
         </div>
+        <img id='dots1' src='images/dots1.png'/>
+        <img id='dots2' src='images/dots2.png'/>
       </div>
 
 
