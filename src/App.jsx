@@ -1,7 +1,17 @@
+// Import Reactu
 import { useState } from 'react'
+
+// Import CSS souborů
 import './App.css'
+
+// Import komponent
 import HamburgerMenu from './HamburgerMenu'
 import CarouselGallery from './CarouselGallery'
+import { AddressMap } from './AddressMap'
+import FacebookIcon from '@mui/icons-material/Facebook'
+import InstagramIcon from '@mui/icons-material/Instagram'
+import MailOutlineIcon from '@mui/icons-material/MailOutline'
+
 
 function App() {
 
@@ -15,7 +25,7 @@ function App() {
           <ul>
             <li><a href='#kdoJsme'>Kdo jsme</a></li>
             <li><a href='#menuLink'>Nabídka</a></li>
-            <li><a>Kontakt</a></li>
+            <li><a href='#contactLink'>Kontakt</a></li>
           </ul>
           <HamburgerMenu />
         </div>
@@ -46,9 +56,7 @@ function App() {
       <div id='menuLink' className="nabidka outerBox">
         <div className="innerBox">
           <h2>Nabídka</h2>
-
           <div className="nabidkaGrid">
-
             <div className="kava menu">
               <h3>Káva</h3>
               <div className='columns'>
@@ -131,12 +139,50 @@ function App() {
                 </div>
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
 
+
+      {/* FOURTH SECTION - CONTACT */}
+      <div id='contactLink' className="contact outerBox">
+        <div className="innerBox">
+          <h2>Přijďte nás navštívit</h2>
+          <div className="contactPage">
+            <div className="contactInfo">
+              <div className="adresa">
+                <h4>Adresa:</h4>
+                <p>Na Bělidle 34</p>
+                <p>150 00 Praha 5</p>
+              </div>
+              <div className="oteviracka">
+                <h4>Otevírací doba:</h4>
+                <p>Po-Pá: 8:00 - 19:00</p>
+              </div>
+              <div className="contactLinks">
+                <h4>Kontakt:</h4>
+                <div className="muiLinks">
+                  <a href='https://www.facebook.com/elpidaproseniory/' target='_blank'><FacebookIcon style={{fontSize: "40px"}} className='iconka'/></a>
+                  <a href='https://www.instagram.com/staraskola_elpida/?hl=cs' target='_blank'><InstagramIcon style={{fontSize: "40px"}} className='iconka'/></a>
+                  <a href='mailto:info@elpida.cz?subject=Dotaz&body=Dobrý%20den,%20píšu%20Vám%20ohledně...'  target='_blank'><MailOutlineIcon style={{fontSize: "40px"}} className='iconka'/></a>
+                </div>
+              </div>
+            </div>
+            <div className="contactMap">
+              <AddressMap />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      {/* LAST SECTION - FOOTER */}
+      <div className="footer outerBox">
+        <div className="innerBox">
+          <a href='https://www.terezachudejova.cz/' target='_blank'><p>© Tereza Chudějová, 2024</p></a>
+        </div>
+      </div>
 
 
     </div>

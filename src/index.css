@@ -23,6 +23,7 @@
   height: auto;
   position: absolute;
   background-color:  rgba(20, 59, 83, 0.8);
+  z-index: 3;
 }
 
 .header .innerBox {
@@ -257,6 +258,117 @@
   grid-area: limo;
   margin: 0 0 var(--space-m) 0;
 }
+
+
+/* --------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+
+
+
+/* FOURTH SECTION - CONTACT */
+.contact {
+  height: auto;
+  background-color: var(--second-color);
+  padding-top: var(--space-xxl);
+}
+
+.contact h2 {
+  text-align: center;
+  font-family: var(--main-font);
+  font-size: var(--size-xl);
+}
+
+.contact .contactPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-xxxl);
+}
+
+.contact .contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-right: var(--space-xxxl);
+  font-family: var(--main-font);
+  font-size: var(--size-s2);
+}
+
+.contactInfo h4 {
+  font-size: var(--size-m);
+  font-weight: 700;
+  margin-bottom: var(--size-xs);
+}
+
+.contactInfo .adresa {
+  margin-bottom: var(--space-s);
+}
+
+.contact .oteviracka {
+  margin-bottom: var(--space-s);
+}
+
+.contactInfo .contactLinks .muiLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.iconka {
+  transition: all 0.2s ease-in-out;
+  color: black;
+  margin-right: var(--space-xs);
+}
+
+.iconka:hover {
+  cursor: pointer;
+  color: var(--main-color);
+  transform: scale(1.1);
+}
+
+.contactPage .contactMap {
+  margin-left: var(--space-xxxl);
+}
+
+
+/* --------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+
+
+
+/* LAST SECTION - FOOTER */
+.footer {
+  height: auto;
+  background-color: var(--second-color);
+}
+
+.footer .innerBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  font-size: var(--size-xxs);
+  color: black;
+  padding: var(--space-xs);
+  transition: all 0.2s ease-in-out;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer p:hover {
+  color: var(--main-color);
+  transform: scale(1.1);
+}
+
+
 
 
 
