@@ -30,6 +30,10 @@
         top: 90% !important;
         left: 70% !important;
     }
+
+    .pytel {
+        top: 55% !important;
+    }
   }
 
   @media only screen and (max-width: 800px) {
@@ -69,3 +73,8 @@
     }
   }
 
+  @media only screen and (max-width: 500px) {
+    .pytel {
+        left: 8% !important;
+    }
+  }
