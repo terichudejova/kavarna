@@ -160,6 +160,7 @@
   height: auto;
   background-color: var(--third-color);
   padding-bottom: var(--space-l);
+  position: relative;
 }
 
 .nabidka .innerBox {

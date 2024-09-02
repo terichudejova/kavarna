@@ -11,6 +11,7 @@ import { AddressMap } from './AddressMap'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import MailOutlineIcon from '@mui/icons-material/MailOutline'
+import ShakeImage from './ShakeImage'
 
 
 function App() {
@@ -143,6 +144,9 @@ function App() {
             </div>
           </div>
         </div>
+        <ShakeImage url={"images/pytel.png"} top={"0"} left={"10%"} width={"100px"} height={"100px"} className="shake pytel"/>
+        <ShakeImage url={"images/beans.png"} top={"-10%"} left={"60%"} width={"80px"} height={"80px"} className="shake beans"/>
+        <ShakeImage url={"images/mocha.png"} top={"85%"} left={"75%"} width={"120px"} height={"120px"} className="shake mocha"/>
       </div>
 
 
