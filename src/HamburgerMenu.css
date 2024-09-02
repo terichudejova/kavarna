@@ -3,7 +3,7 @@
 /* Celé hamburger menu */
 .hamburger-menu {
     position: fixed;
-    top: 60px;
+    top: 70px;
     right: 60px;
     z-index: 2;
     width: 30px;
@@ -29,7 +29,7 @@
     background-color: white;
     border-radius: 3px;
     transition: all 0.3s ease;
-    box-shadow: rgba(0, 0, 0, 0.7) 0 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0 0 5px;
   }
 
   /* Přechod hamburgeru na křížek */
@@ -62,6 +62,7 @@
     font-family: var(--main-font);
     font-weight: 500;
     font-size: var(--size-s);
+    text-align: center;
   }
   
   .nav-menu.open {
@@ -88,67 +89,58 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .hamburger-menu {
+    top: 50px;
+    right: 50px;
+  }
+
+  .nav-menu {
+    right: -30px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .hamburger-menu {
+    right: 45px;
+  }
+
+  .nav-menu {
+    right: -20px;
+  }
+}
+
 @media only screen and (max-width: 400px) {
+  .hamburger-menu {
+    top: 60px;
+    right: 30px;
+  }
+
   .nav-menu {
     height: 140px;
-    width: 130px;
+    width: 120px;
     font-size: var(--size-xs);
-  }
-}
-
-/* 
-@media only screen and (max-width: 750px) {
-  .nav-menu {
-    width: 80%;
-    padding: 10px;
-    text-align: center;
-    font-size: 14px;
+    right: -10px;
+    padding: 20px;
   }
 
-  .nav-menu a {
-    padding: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .hamburger-menu {
-    right: 10px;
-    top: 30px;
-  }
-}
-
-
-@media only screen and (max-width: 550px) {
-  .hamburger-menu {
-    top: 25px;
-    right: 0px;
-  }
-}
-
-@media only screen and (max-width: 450px) {
   .bar {
     height: 2px;
   }
 
   .menu-toggle {
     width: 20px;
-    height: 18px;
+    height: 16px;
   }
 
   .menu-toggle.open .bar:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 6px) scaleX(1.2);
+    transform: rotate(45deg) translate(5px, 5px) scaleX(1.2);
   }
   
   .menu-toggle.open .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -6px) scaleX(1.2);
-  }
-  
-  .hamburger-menu {
-    right: -20px;
+    transform: rotate(-45deg) translate(5px, -5px) scaleX(1.2);
   }
 
-  .nav-menu {
-    right: 30px;
-  }
 }
-  */
+  

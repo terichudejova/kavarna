@@ -394,7 +394,8 @@
     font-size: var(--size-xl);
   }
 
-  .menu .columns {
+  .menu .columns,
+  .nabidka .jidlo p {
     font-size: var(--size-m);
   }
 
@@ -463,7 +464,8 @@
     margin-left: var(--space-m);
   }
 
-  .menu .columns {
+  .menu .columns,
+  .nabidka .jidlo p {
     font-size: var(--size-s);
   }
 }
@@ -529,6 +531,10 @@
     display: none;
   }
 
+  .header {
+    background-color: transparent;
+  }
+
   .aboutUs .oNas {
     flex-direction: column;
     justify-content: start;
@@ -539,6 +545,7 @@
     order: -1;
     margin-bottom: var(--space-xl);
     margin-left: 0;
+    text-align: center;
   }
 
   .aboutUs .oNas .carouselSection {
@@ -583,6 +590,11 @@
     height: 50px;
   }
 
+  .header .innerBox {
+    padding-left: var(--space-l);
+    padding-right: var(--space-l);
+  }
+
   .aboutUs h1 {
     font-size: var(--size-xl);
     margin-top: var(--space-xs);
@@ -596,7 +608,8 @@
     font-size: var(--size-m);
   }
 
-  .menu .columns {
+  .menu .columns,
+  .nabidka .jidlo p {
     font-size: var(--size-xs);
   }
 
@@ -608,6 +621,11 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .header .innerBox {
+    padding-left: var(--space-m);
+    padding-right: var(--space-m);
+  }
+
   .aboutUs h1 {
     font-size: var(--size-l);
   }
@@ -638,6 +656,7 @@
     width: 40px;
     height: 40px;
     margin-top: var(--space-l);
+    margin-bottom: 0;
   }
 
   .header .innerBox {
@@ -647,6 +666,11 @@
 
   .aboutUs h1 {
     font-size: var(--size-m);
+    margin-bottom: var(--space-m);
+  }
+
+  .aboutUs .oNas .povidani {
+    margin-bottom: var(--space-m);
   }
 
   .menu {
@@ -687,13 +711,11 @@
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 330px) {
   .innerBox {
     width: 90%;
   }
-}
 
-@media only screen and (max-width: 330px) {
   .menu {
     padding: var(--space-s) var(--space-xs) 0 var(--space-xs);
   }
