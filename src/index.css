@@ -8,8 +8,14 @@
 }
 
 .innerBox {
-  width: 70%;
+  width: 80%;
 }
+
+
+/* --------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+
+
 
 
 /* FIRST SECTION - HEADER */
@@ -74,7 +80,14 @@
 }
 
 
-/* FIRST SECTION - HEADER */
+/* --------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* SECOND SECTION - ABOUT US */
 .aboutUs {
   height: auto;
   background-color: var(--main-color);
@@ -101,7 +114,7 @@
 .aboutUs h1 {
   font-family: var(--heading-font);
   color: var(--third-color);
-  font-size: var(--size-xxl);
+  font-size: var(--size-xxxl);
   margin-bottom: var(--space-xl);
 }
 
@@ -113,7 +126,7 @@
 }
 
 .aboutUs .oNas .carouselSection {
-  width: 50%;
+  width: 40%;
 }
 
 .aboutUs .oNas img {
@@ -122,13 +135,128 @@
 }
 
 .aboutUs .oNas .povidani {
-  width: 50%;
+  width: 60%;
   color: var(--second-color);
-  font-size: var(--size-s2);
+  font-size: var(--size-m);
   font-family: var(--main-font);
 }
 
 
+/* --------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+
+
+/* THIRD SECTION - NABÍDKA */
+.nabidka {
+  height: auto;
+  background-color: var(--third-color);
+  padding-bottom: var(--space-l);
+}
+
+.nabidka .innerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+}
+
+.nabidka h2 {
+  width: 100%;
+  text-align: right;
+  position: absolute;
+  top: -40px;
+  font-size: var(--size-xl);
+  font-family: var(--main-font);
+}
+
+.nabidka .nabidkaGrid {
+  width: 100%;
+  margin-top: var(--space-m);
+  display: grid;
+  grid-template-areas:
+  "kava kava caj caj"
+  "kava kava caj caj"
+  "kava kava caj caj"
+  "kava kava limo limo"
+  "jidlo jidlo limo limo"
+  "jidlo jidlo limo limo";
+}
+
+.menu {
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: var(--space-s) var(--space-s) var(--space-xs) var(--space-s);
+  box-sizing: border-box;
+}
+
+.menu h3 {
+  font-family: var(--main-font);
+  font-size: var(--size-l);
+  margin-bottom: var(--space-s);
+  text-align: center;
+}
+.menu .columns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  font-size: var(--size-s2);
+  font-family: var(--main-font);
+}
+
+.menu .leftColumn {
+  width: 50%;
+  text-align: left;
+}
+
+.menu .rightColumn {
+  width: 50%;
+  text-align: right;
+}
+
+.leftColumn ul {
+  padding-left: var(--space-xs2);
+}
+
+.leftColumn ul li {
+  padding-bottom: var(--space-xs);
+}
+
+.rightColumn ul li {
+  list-style: none;
+  padding-bottom: var(--space-xs);
+}
+
+.nabidka .kava {
+  grid-area: kava;
+  margin: 0 var(--space-m) var(--space-m) 0;
+}
+
+.nabidka .caj {
+  grid-area: caj;
+  margin: 0 0 var(--space-m) 0;
+}
+
+.nabidka .jidlo {
+  grid-area: jidlo;
+  margin: 0 var(--space-m) var(--space-m) 0;
+  padding-bottom: var(--space-s);
+}
+
+.nabidka .jidlo p {
+  font-size: var(--size-s2);
+  font-family: var(--main-font);
+  text-align: center;
+}
+
+.nabidka .limonady {
+  grid-area: limo;
+  margin: 0 0 var(--space-m) 0;
+}
 
 
 

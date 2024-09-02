@@ -37,7 +37,7 @@ export default function HamburgerMenu() {
         </div>
         <nav ref={navRef} className={`nav-menu ${isOpen ? 'open' : ''}`}>
           <a href="#kdoJsme" onClick={handleCloseMenu}>Kdo jsme</a>
-          <a href="#" onClick={handleCloseMenu}>Nabídka</a>
+          <a href="#menuLink" onClick={handleCloseMenu}>Nabídka</a>
           <a href="#" onClick={handleCloseMenu}>Kontakt</a>
         </nav>
       </div>
