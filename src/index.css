@@ -56,7 +56,7 @@
   flex-direction: row;
   justify-content: end;
   align-items: center;
-  margin-top: var(--space-m);
+  margin-top: var(--space-s2);
   margin-bottom: 0;
 }
 
