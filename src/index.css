@@ -21,7 +21,7 @@
 /* FIRST SECTION - HEADER */
 .header {
   height: auto;
-  position: absolute;
+  position: fixed;
   background-color:  rgba(20, 59, 83, 0.8);
   z-index: 3;
 }
