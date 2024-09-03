@@ -139,16 +139,16 @@
 
 #dots1 {
   position: absolute;
-  top: 200px;
-  right: -30px;
-  display: none;
+  width: 180px;
+  top: 300px;
+  right: -20px;
 }
 
 #dots2 {
   position: absolute;
-  top: 150px;
-  left: -270px;
-  display: none;
+  width: 340px;
+  top: 300px;
+  left: -160px;
 }
 
 /* --------------------------------------------------------------------------------------- */
@@ -434,10 +434,6 @@
 }
 
 @media only screen and (min-width: 2000px) {
-  #dots1,
-  #dots2 {
-    display: block;
-  }
   .innerBox {
     width: 70%;
   }
@@ -484,6 +480,11 @@
 
 /* Menší obrazovky */
 @media only screen and (max-width: 1400px) {
+  #dots1,
+  #dots2 {
+    display: none;
+  }
+
   .aboutUs .oNas .povidani {
     font-size: var(--size-s2);
     margin-left: var(--space-m);
