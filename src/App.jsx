@@ -37,6 +37,7 @@ function App() {
       <div id='kdoJsme'  className="aboutUs outerBox">
         <div className="innerBox">
           <h1>kavárna Stará škola</h1>
+          <span>- místo, kde se zastaví čas a oživí vzpomínky na nejlepší koláče od babičky&nbsp;-</span>
           <div className="oNas">
             <div className='carouselSection'>
               <CarouselGallery />

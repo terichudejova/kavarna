@@ -95,15 +95,6 @@
   padding-top: calc(var(--space-l) * 3);
 }
 
-/* .aboutUs::after {
-  content: "";
-  width: 200%;
-  height: 20rem;
-  background-color: var(--main-color);
-  transform: skewY(-5deg);
-  position: relative;
-  bottom: -10rem;
-} */
 
 .aboutUs .innerBox {
   display: flex;
@@ -116,7 +107,16 @@
   font-family: var(--heading-font);
   color: var(--third-color);
   font-size: var(--size-xxxl);
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-xs2);
+}
+
+.aboutUs span {
+  color: white;
+  font-family: var(--main-font);
+  font-size: var(--size-s2);
+  margin-bottom: var(--space-xxl);
+  font-weight: 300;
+  text-align: center;
 }
 
 .aboutUs .oNas {
@@ -388,11 +388,18 @@
   .aboutUs h1 {
     font-size: calc(var(--size-m) * 3);
     margin-top: var(--space-m);
-    margin-bottom: var(--space-xxl);
+  }
+
+  .aboutUs span {
+    margin-bottom: var(--space-xxxl);
   }
 
   .aboutUs .oNas .povidani {
     font-size: var(--size-l);
+  }
+
+  .aboutUs span {
+    font-size: var(--size-m);
   }
 
   .header ul li {
@@ -480,6 +487,10 @@
   .aboutUs .oNas .povidani {
     font-size: var(--size-s2);
     margin-left: var(--space-m);
+  }
+
+  .aboutUs span {
+    font-size: var(--size-s);
   }
 
   .menu .columns,
@@ -622,6 +633,10 @@
     font-size: var(--size-s);
   }
 
+  .aboutUs span {
+    font-size: var(--size-xs);
+  }
+
   .menu h3 {
     font-size: var(--size-m);
   }
@@ -650,6 +665,10 @@
   
   .aboutUs .oNas .povidani {
     font-size: var(--size-xs);
+  }
+
+  .aboutUs span {
+    font-size: calc(var(--size-xxl) / 3);
   }
 
   .menu .leftColumn {
@@ -688,6 +707,9 @@
 
   .aboutUs h1 {
     font-size: var(--size-m);
+  }
+
+  .aboutUs span {
     margin-bottom: var(--space-m);
   }
 
